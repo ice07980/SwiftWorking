@@ -13,7 +13,15 @@
  + Add an else-if statement to handle if **hp** is less than or equal to 50
  */
 // Test variables
+var hp = 35
+var maxHp = 100
 
 // Simple if statement
-
+if hp >= maxHp {
+    print("HP at maximum")
+} else if hp <= 50 {
+    print ("Grab some health soon!")
+} else {
+    print("HP is between 51 and 99")
+}
 //:[Next Topic](@next)

@@ -11,12 +11,26 @@
  + Use a for-in loop to iterate over a range or index
  */
 // Test variables
+var armorTypes = ["Heavy Plate", "Hunters Gear", "Mege Robes"]
+var playerGreeting = "Hello fellow Hunter!"
 
 // Array iteration
+for armor in armorTypes{
+    print(armor)
+}
 
 // String iteration
+for char in playerGreeting {
+    print(char)
+}
 
 // Range iteration
+
+var hitCount = 5
+
+for itemNumber in 1..<hitCount {
+    print(itemNumber)
+}
 
 /*:
  [Previous Topic](@previous)
