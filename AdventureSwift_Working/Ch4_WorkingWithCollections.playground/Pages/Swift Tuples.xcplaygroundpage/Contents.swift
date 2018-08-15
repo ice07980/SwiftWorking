@@ -14,11 +14,21 @@
  + Explore what tuples have to offer
  */
 // Simple tuple
+var upperCutAttack: (String, Int, Bool) = ("Upper Cut Smash", 25, true)
+var (attackName, damageDealt, rechargeable) = upperCutAttack
+attackName
+upperCutAttack.0
 
 // Naming tuple values
+var planetSmashAttack = (moveName: "Planet Smash", damage: 25, isRechargeable: true)
+planetSmashAttack.damage
+planetSmashAttack.1
 
 // Naming values with type annotation
-
+var shieldStompAttack: (name: String, dm: Int, canRecharge: Bool)
+shieldStompAttack = ("Shield Stomp", 35, false)
+shieldStompAttack.canRecharge
+shieldStompAttack.2
 /*:
  [Previous Topic](@previous)
  

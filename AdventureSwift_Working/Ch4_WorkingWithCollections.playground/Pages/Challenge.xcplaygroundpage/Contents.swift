@@ -12,19 +12,29 @@
  8. Create a tuple called **armorPieceTuple** and assign it named variables for *name*, *cost*, and *canEquip*, all with initial values. Then access the canEquip value with dot notation.
  */
 // 1
+var shopItemArray = ["Stone Shield", "Bronze Hammer", "Gold Helm"]
+var shopItemDictionary = ["Stone Shield": 15, "Bronze Hammer": 25, "Gold Helm": 35, "Diamond Longsword": 1000]
 
 // 2
+shopItemArray.contains("Diamond Longsword")
 
 // 3
+shopItemArray.insert("Diamond Longsword", at: 2)
 
 // 4
+var selectedItem = shopItemArray[2]
 
 // 5
+var selectedItemPrice = shopItemDictionary[selectedItem]
 
 // 6
+var fullArmorSet: Set = ["Diamond Helm", "Diamond Armor", "Diamond Greaves", "Diamond Bracers"]
+var currentArmorSet: Set = ["Diamond Helm", "Diamond Bracers"]
 
 // 7
+fullArmorSet.subtract(currentArmorSet)
 
 // 8
-
+var armorPriceTuple = (name: "Diamond Bracers", cost: 55, canEquip: true)
+armorPriceTuple.canEquip
 //: [Previous Topic](@previous)

@@ -11,9 +11,14 @@
  + Try out the different operations the `Set` class can perform
  */
 // Test variables
+var activeQuests: Set = ["Fetch Gemstones", "Big Boss", "The Undertaker", "Granny Needs Firewood"]
+var completedQuests: Set = ["Big Boss", "All-4-One", "Hereafter"]
 
 // Set operations
-
+activeQuests.intersection(completedQuests)
+activeQuests.symmetricDifference(completedQuests)
+activeQuests.union(completedQuests)
+activeQuests.subtract(completedQuests)
 /*:
  [Previous Topic](@previous)
  
