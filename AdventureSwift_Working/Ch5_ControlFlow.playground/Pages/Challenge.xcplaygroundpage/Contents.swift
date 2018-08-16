@@ -11,16 +11,41 @@
  7. Add a guard statement inside the `for-in` loop to mamke sure each player is at least level 1 to proceed
  */
 // 1
+var currentWeapon: String?
 
 // 2
+if let weapon = currentWeapon {
+    print("I've got a \(weapon) for ya!")
+} else {
+    print("I'm unarmed...")
+}
 
 // 3
+var currentEXP = 1059
 
 // 4
+switch currentEXP {
+case 0...200:
+    print("Kinda low...")
+case 201...500:
+    print("Getting better, just a bit more...")
+case 501...1000:
+    print("Time to level up!")
+default:
+    print("Corrpted data...")
+}
 
 // 5
+var playerLevels = ["Harrison": 23, "Steven": 25, "Bob": 0]
 
 // 6
+for (playerName, playerLevel) in playerLevels {
+    guard playerLevel > 0 else {
+        print("\(playerName) you need to do the tutorial, because you're a noob")
+        continue
+    }
+    print("Player \(playerName) is at level \(playerLevel)")
+}
 
 // 7
 

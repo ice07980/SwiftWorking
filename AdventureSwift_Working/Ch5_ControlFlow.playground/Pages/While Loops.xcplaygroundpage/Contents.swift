@@ -13,8 +13,18 @@
  + Use a repeat-while loop to print out **playerHP** until it is at 0 and see the different behavior
  */
 // While loop
+var playerHP = 5
+
+//while playerHP > 0 {
+//    print("HP at \(playerHP)")
+//    playerHP -= 1
+//}
 
 // Repeat-while loop
+repeat {
+    playerHP -= 1
+    print("HP at \(playerHP)")
+} while playerHP >= 0
 /*:
  [Previous Topic](@previous)
  

@@ -17,11 +17,29 @@
  + Write a simple function with a `guard` statement inside that checks if a given item is in **shopItems**
  */
 // Test variables
+let shopItems = ["Magic Wand": 10, "Iron Helm": 5, "Excalibur": 1000]
+let currentGold = 20
 
 // Guard statement with for-in loop
+for (item, price) in shopItems {
+    guard currentGold >= price else {
+        print("You can't afford the \(item)")
+        continue
+    }
+    print("Go ahead, the \(item) is yours for \(price) gold!")
+}
+
 
 // Guard check for specific item
+func itemLookUp(itemImLookingFor: String) {
+    guard let foundItemValue = shopItems[itemImLookingFor] else {
+        print("Sorry, we're out of the \(itemImLookingFor)")
+        return
+    }
+    print("Yes, we have an \(itemImLookingFor) in stock for \(foundItemValue) gold!")
+}
 
+itemLookUp(itemImLookingFor: "Iron Helm")
 /*:
  [Previous Topic](@previous)
  
